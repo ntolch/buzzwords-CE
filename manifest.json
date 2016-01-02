@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Buzzwords",
+  "version": "versionString",
+  "default_locale": "en",
+  "description": "Replace the buzzwords on with other",
+  "icons": {"128": "icon.png"},
+
+  //"page_action":
+
+  "permissions": [
+  "activeTab",
+  "https://ajax.googleapis.com/"
+  ]
+}
