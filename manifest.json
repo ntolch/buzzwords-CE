@@ -1,15 +1,24 @@
 {
   "manifest_version": 2,
   "name": "Buzzwords",
-  "version": "versionString",
+  "version": "0.1",
   "default_locale": "en",
-  "description": "Replace the buzzwords on with other",
+  "description": "Replace the buzzwords on this page with other stupid words.",
   "icons": {"128": "icon.png"},
 
   //"page_action":
 
   "permissions": [
-  "activeTab",
-  "https://ajax.googleapis.com/"
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      //"matches":
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
   ]
 }
